@@ -1,0 +1,13 @@
+[project]
+name = "chatlab"
+version = "0.1.0"
+requires-python = ">=3.12, <3.13"
+dependencies = ["anthropic", "google-genai", "notebook", "openai"]
+
+[tool.black]
+line-length = 100
+skip-magic-trailing-comma = true
+target-version = ["py312"]
+
+[tool.uv]
+exclude-newer = "2026-08-12T00:00:00+08:00"
